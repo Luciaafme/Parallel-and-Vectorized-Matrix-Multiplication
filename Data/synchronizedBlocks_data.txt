@@ -1,0 +1,1314 @@
+C:\Users\lucia\.jdks\corretto-17.0.8.1\bin\java.exe "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\lib\idea_rt.jar=59136:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\bin" -Dfile.encoding=UTF-8 -classpath C:\Users\lucia\IdeaProjects\T3Individual\target\test-classes;C:\Users\lucia\IdeaProjects\T3Individual\target\classes;C:\Users\lucia\.m2\repository\org\openjdk\jmh\jmh-core\1.37\jmh-core-1.37.jar;C:\Users\lucia\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\lucia\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\lucia\.m2\repository\org\openjdk\jmh\jmh-generator-annprocess\1.37\jmh-generator-annprocess-1.37.jar;C:\Users\lucia\.m2\repository\com\aparapi\aparapi\2.0.0\aparapi-2.0.0.jar;C:\Users\lucia\.m2\repository\com\aparapi\aparapi-jni\1.4.2\aparapi-jni-1.4.2.jar;C:\Users\lucia\.m2\repository\org\apache\bcel\bcel\6.4.1\bcel-6.4.1.jar;C:\Users\lucia\.m2\repository\org\scala-lang\scala-library\2.13.1\scala-library-2.13.1.jar org.openjdk.jmh.Main org.example.ParallelBenchmarking.synchronizedMultiplication$
+# JMH version: 1.37
+# VM version: JDK 17.0.8.1, OpenJDK 64-Bit Server VM, 17.0.8.1+8-LTS
+# VM invoker: C:\Users\lucia\.jdks\corretto-17.0.8.1\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\lib\idea_rt.jar=59136:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 ms each
+# Measurement: 4 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.ParallelBenchmarking.synchronizedMultiplication
+# Parameters: (n = 10, numThreads = 1)
+
+# Run progress: 0,00% complete, ETA 00:00:00
+# Fork: 1 of 1
+# Warmup Iteration   1: 4,363 ms/op
+# Warmup Iteration   2: 0,502 ms/op
+# Warmup Iteration   3: 0,398 ms/op
+Iteration   1: 0,414 ms/op
+Iteration   2: 0,381 ms/op
+Iteration   3: 0,389 ms/op
+Iteration   4: 
+Matrix size: 10x10
+Total Memory used: 0 MB
+Total Heap Size: 28 MB
+Available Cores: 16
+0,277 ms/op
+
+
+Result "org.example.ParallelBenchmarking.synchronizedMultiplication":
+  0,365 ±(99.9%) 0,391 ms/op [Average]
+  (min, avg, max) = (0,277, 0,365, 0,414), stdev = 0,061
+  CI (99.9%): [≈ 0, 0,756] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.8.1, OpenJDK 64-Bit Server VM, 17.0.8.1+8-LTS
+# VM invoker: C:\Users\lucia\.jdks\corretto-17.0.8.1\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\lib\idea_rt.jar=59136:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 ms each
+# Measurement: 4 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.ParallelBenchmarking.synchronizedMultiplication
+# Parameters: (n = 10, numThreads = 2)
+
+# Run progress: 2,78% complete, ETA 00:00:38
+# Fork: 1 of 1
+# Warmup Iteration   1: 1,963 ms/op
+# Warmup Iteration   2: 0,519 ms/op
+# Warmup Iteration   3: 0,439 ms/op
+Iteration   1: 0,448 ms/op
+Iteration   2: 0,421 ms/op
+Iteration   3: 0,464 ms/op
+Iteration   4: 
+Matrix size: 10x10
+Total Memory used: 1 MB
+Total Heap Size: 34 MB
+Available Cores: 16
+0,237 ms/op
+
+
+Result "org.example.ParallelBenchmarking.synchronizedMultiplication":
+  0,392 ±(99.9%) 0,680 ms/op [Average]
+  (min, avg, max) = (0,237, 0,392, 0,464), stdev = 0,105
+  CI (99.9%): [≈ 0, 1,073] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.8.1, OpenJDK 64-Bit Server VM, 17.0.8.1+8-LTS
+# VM invoker: C:\Users\lucia\.jdks\corretto-17.0.8.1\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\lib\idea_rt.jar=59136:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 ms each
+# Measurement: 4 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.ParallelBenchmarking.synchronizedMultiplication
+# Parameters: (n = 10, numThreads = 4)
+
+# Run progress: 5,56% complete, ETA 00:00:37
+# Fork: 1 of 1
+# Warmup Iteration   1: 1,112 ms/op
+# Warmup Iteration   2: 0,699 ms/op
+# Warmup Iteration   3: 0,688 ms/op
+Iteration   1: 0,721 ms/op
+Iteration   2: 1,176 ms/op
+Iteration   3: 0,704 ms/op
+Iteration   4: 
+Matrix size: 10x10
+Total Memory used: 1 MB
+Total Heap Size: 34 MB
+Available Cores: 16
+0,699 ms/op
+
+
+Result "org.example.ParallelBenchmarking.synchronizedMultiplication":
+  0,825 ±(99.9%) 1,514 ms/op [Average]
+  (min, avg, max) = (0,699, 0,825, 1,176), stdev = 0,234
+  CI (99.9%): [≈ 0, 2,339] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.8.1, OpenJDK 64-Bit Server VM, 17.0.8.1+8-LTS
+# VM invoker: C:\Users\lucia\.jdks\corretto-17.0.8.1\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\lib\idea_rt.jar=59136:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 ms each
+# Measurement: 4 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.ParallelBenchmarking.synchronizedMultiplication
+# Parameters: (n = 10, numThreads = 8)
+
+# Run progress: 8,33% complete, ETA 00:00:37
+# Fork: 1 of 1
+# Warmup Iteration   1: 1,256 ms/op
+# Warmup Iteration   2: 0,964 ms/op
+# Warmup Iteration   3: 0,908 ms/op
+Iteration   1: 0,851 ms/op
+Iteration   2: 0,856 ms/op
+Iteration   3: 0,827 ms/op
+Iteration   4: 
+Matrix size: 10x10
+Total Memory used: 1 MB
+Total Heap Size: 34 MB
+Available Cores: 16
+0,876 ms/op
+
+
+Result "org.example.ParallelBenchmarking.synchronizedMultiplication":
+  0,853 ±(99.9%) 0,130 ms/op [Average]
+  (min, avg, max) = (0,827, 0,853, 0,876), stdev = 0,020
+  CI (99.9%): [0,723, 0,982] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.8.1, OpenJDK 64-Bit Server VM, 17.0.8.1+8-LTS
+# VM invoker: C:\Users\lucia\.jdks\corretto-17.0.8.1\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\lib\idea_rt.jar=59136:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 ms each
+# Measurement: 4 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.ParallelBenchmarking.synchronizedMultiplication
+# Parameters: (n = 10, numThreads = 12)
+
+# Run progress: 11,11% complete, ETA 00:00:35
+# Fork: 1 of 1
+# Warmup Iteration   1: 1,477 ms/op
+# Warmup Iteration   2: 1,356 ms/op
+# Warmup Iteration   3: 1,253 ms/op
+Iteration   1: 1,071 ms/op
+Iteration   2: 1,161 ms/op
+Iteration   3: 1,106 ms/op
+Iteration   4: 
+Matrix size: 10x10
+Total Memory used: 1 MB
+Total Heap Size: 34 MB
+Available Cores: 16
+1,061 ms/op
+
+
+Result "org.example.ParallelBenchmarking.synchronizedMultiplication":
+  1,100 ±(99.9%) 0,292 ms/op [Average]
+  (min, avg, max) = (1,061, 1,100, 1,161), stdev = 0,045
+  CI (99.9%): [0,808, 1,392] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.8.1, OpenJDK 64-Bit Server VM, 17.0.8.1+8-LTS
+# VM invoker: C:\Users\lucia\.jdks\corretto-17.0.8.1\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\lib\idea_rt.jar=59136:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 ms each
+# Measurement: 4 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.ParallelBenchmarking.synchronizedMultiplication
+# Parameters: (n = 10, numThreads = 16)
+
+# Run progress: 13,89% complete, ETA 00:00:33
+# Fork: 1 of 1
+# Warmup Iteration   1: 2,644 ms/op
+# Warmup Iteration   2: 1,701 ms/op
+# Warmup Iteration   3: 1,665 ms/op
+Iteration   1: 1,872 ms/op
+Iteration   2: 1,556 ms/op
+Iteration   3: 1,468 ms/op
+Iteration   4: 
+Matrix size: 10x10
+Total Memory used: 1 MB
+Total Heap Size: 34 MB
+Available Cores: 16
+1,558 ms/op
+
+
+Result "org.example.ParallelBenchmarking.synchronizedMultiplication":
+  1,613 ±(99.9%) 1,147 ms/op [Average]
+  (min, avg, max) = (1,468, 1,613, 1,872), stdev = 0,178
+  CI (99.9%): [0,466, 2,761] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.8.1, OpenJDK 64-Bit Server VM, 17.0.8.1+8-LTS
+# VM invoker: C:\Users\lucia\.jdks\corretto-17.0.8.1\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\lib\idea_rt.jar=59136:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 ms each
+# Measurement: 4 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.ParallelBenchmarking.synchronizedMultiplication
+# Parameters: (n = 100, numThreads = 1)
+
+# Run progress: 16,67% complete, ETA 00:00:32
+# Fork: 1 of 1
+# Warmup Iteration   1: 5,175 ms/op
+# Warmup Iteration   2: 1,405 ms/op
+# Warmup Iteration   3: 1,256 ms/op
+Iteration   1: 1,273 ms/op
+Iteration   2: 1,585 ms/op
+Iteration   3: 2,185 ms/op
+Iteration   4: 
+Matrix size: 100x100
+Total Memory used: 4 MB
+Total Heap Size: 40 MB
+Available Cores: 16
+2,353 ms/op
+
+
+Result "org.example.ParallelBenchmarking.synchronizedMultiplication":
+  1,849 ±(99.9%) 3,272 ms/op [Average]
+  (min, avg, max) = (1,273, 1,849, 2,353), stdev = 0,506
+  CI (99.9%): [≈ 0, 5,121] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.8.1, OpenJDK 64-Bit Server VM, 17.0.8.1+8-LTS
+# VM invoker: C:\Users\lucia\.jdks\corretto-17.0.8.1\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\lib\idea_rt.jar=59136:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 ms each
+# Measurement: 4 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.ParallelBenchmarking.synchronizedMultiplication
+# Parameters: (n = 100, numThreads = 2)
+
+# Run progress: 19,44% complete, ETA 00:00:31
+# Fork: 1 of 1
+# Warmup Iteration   1: 21,798 ms/op
+# Warmup Iteration   2: 1,316 ms/op
+# Warmup Iteration   3: 1,201 ms/op
+Iteration   1: 1,223 ms/op
+Iteration   2: 1,213 ms/op
+Iteration   3: 1,177 ms/op
+Iteration   4: 
+Matrix size: 100x100
+Total Memory used: 5 MB
+Total Heap Size: 28 MB
+Available Cores: 16
+1,311 ms/op
+
+
+Result "org.example.ParallelBenchmarking.synchronizedMultiplication":
+  1,231 ±(99.9%) 0,368 ms/op [Average]
+  (min, avg, max) = (1,177, 1,231, 1,311), stdev = 0,057
+  CI (99.9%): [0,863, 1,599] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.8.1, OpenJDK 64-Bit Server VM, 17.0.8.1+8-LTS
+# VM invoker: C:\Users\lucia\.jdks\corretto-17.0.8.1\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\lib\idea_rt.jar=59136:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 ms each
+# Measurement: 4 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.ParallelBenchmarking.synchronizedMultiplication
+# Parameters: (n = 100, numThreads = 4)
+
+# Run progress: 22,22% complete, ETA 00:00:30
+# Fork: 1 of 1
+# Warmup Iteration   1: 28,147 ms/op
+# Warmup Iteration   2: 1,759 ms/op
+# Warmup Iteration   3: 1,599 ms/op
+Iteration   1: 1,529 ms/op
+Iteration   2: 1,568 ms/op
+Iteration   3: 1,564 ms/op
+Iteration   4: 
+Matrix size: 100x100
+Total Memory used: 5 MB
+Total Heap Size: 34 MB
+Available Cores: 16
+1,564 ms/op
+
+
+Result "org.example.ParallelBenchmarking.synchronizedMultiplication":
+  1,556 ±(99.9%) 0,118 ms/op [Average]
+  (min, avg, max) = (1,529, 1,556, 1,568), stdev = 0,018
+  CI (99.9%): [1,438, 1,674] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.8.1, OpenJDK 64-Bit Server VM, 17.0.8.1+8-LTS
+# VM invoker: C:\Users\lucia\.jdks\corretto-17.0.8.1\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\lib\idea_rt.jar=59136:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 ms each
+# Measurement: 4 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.ParallelBenchmarking.synchronizedMultiplication
+# Parameters: (n = 100, numThreads = 8)
+
+# Run progress: 25,00% complete, ETA 00:00:29
+# Fork: 1 of 1
+# Warmup Iteration   1: 23,670 ms/op
+# Warmup Iteration   2: 1,749 ms/op
+# Warmup Iteration   3: 1,682 ms/op
+Iteration   1: 1,710 ms/op
+Iteration   2: 1,614 ms/op
+Iteration   3: 1,651 ms/op
+Iteration   4: 
+Matrix size: 100x100
+Total Memory used: 5 MB
+Total Heap Size: 34 MB
+Available Cores: 16
+1,698 ms/op
+
+
+Result "org.example.ParallelBenchmarking.synchronizedMultiplication":
+  1,668 ±(99.9%) 0,287 ms/op [Average]
+  (min, avg, max) = (1,614, 1,668, 1,710), stdev = 0,044
+  CI (99.9%): [1,381, 1,956] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.8.1, OpenJDK 64-Bit Server VM, 17.0.8.1+8-LTS
+# VM invoker: C:\Users\lucia\.jdks\corretto-17.0.8.1\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\lib\idea_rt.jar=59136:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 ms each
+# Measurement: 4 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.ParallelBenchmarking.synchronizedMultiplication
+# Parameters: (n = 100, numThreads = 12)
+
+# Run progress: 27,78% complete, ETA 00:00:28
+# Fork: 1 of 1
+# Warmup Iteration   1: 21,624 ms/op
+# Warmup Iteration   2: 1,953 ms/op
+# Warmup Iteration   3: 1,606 ms/op
+Iteration   1: 1,653 ms/op
+Iteration   2: 1,567 ms/op
+Iteration   3: 1,637 ms/op
+Iteration   4: 
+Matrix size: 100x100
+Total Memory used: 5 MB
+Total Heap Size: 28 MB
+Available Cores: 16
+1,678 ms/op
+
+
+Result "org.example.ParallelBenchmarking.synchronizedMultiplication":
+  1,634 ±(99.9%) 0,307 ms/op [Average]
+  (min, avg, max) = (1,567, 1,634, 1,678), stdev = 0,047
+  CI (99.9%): [1,327, 1,941] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.8.1, OpenJDK 64-Bit Server VM, 17.0.8.1+8-LTS
+# VM invoker: C:\Users\lucia\.jdks\corretto-17.0.8.1\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\lib\idea_rt.jar=59136:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 ms each
+# Measurement: 4 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.ParallelBenchmarking.synchronizedMultiplication
+# Parameters: (n = 100, numThreads = 16)
+
+# Run progress: 30,56% complete, ETA 00:00:27
+# Fork: 1 of 1
+# Warmup Iteration   1: 19,630 ms/op
+# Warmup Iteration   2: 2,066 ms/op
+# Warmup Iteration   3: 1,809 ms/op
+Iteration   1: 2,129 ms/op
+Iteration   2: 1,781 ms/op
+Iteration   3: 1,847 ms/op
+Iteration   4: 
+Matrix size: 100x100
+Total Memory used: 4 MB
+Total Heap Size: 34 MB
+Available Cores: 16
+2,776 ms/op
+
+
+Result "org.example.ParallelBenchmarking.synchronizedMultiplication":
+  2,133 ±(99.9%) 2,935 ms/op [Average]
+  (min, avg, max) = (1,781, 2,133, 2,776), stdev = 0,454
+  CI (99.9%): [≈ 0, 5,069] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.8.1, OpenJDK 64-Bit Server VM, 17.0.8.1+8-LTS
+# VM invoker: C:\Users\lucia\.jdks\corretto-17.0.8.1\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\lib\idea_rt.jar=59136:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 ms each
+# Measurement: 4 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.ParallelBenchmarking.synchronizedMultiplication
+# Parameters: (n = 500, numThreads = 1)
+
+# Run progress: 33,33% complete, ETA 00:00:26
+# Fork: 1 of 1
+# Warmup Iteration   1: 272,584 ms/op
+# Warmup Iteration   2: 277,513 ms/op
+# Warmup Iteration   3: 222,092 ms/op
+Iteration   1: 214,173 ms/op
+Iteration   2: 199,396 ms/op
+Iteration   3: 227,772 ms/op
+Iteration   4: 
+Matrix size: 500x500
+Total Memory used: 4 MB
+Total Heap Size: 48 MB
+Available Cores: 16
+200,433 ms/op
+
+
+Result "org.example.ParallelBenchmarking.synchronizedMultiplication":
+  210,443 ±(99.9%) 86,410 ms/op [Average]
+  (min, avg, max) = (199,396, 210,443, 227,772), stdev = 13,372
+  CI (99.9%): [124,033, 296,854] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.8.1, OpenJDK 64-Bit Server VM, 17.0.8.1+8-LTS
+# VM invoker: C:\Users\lucia\.jdks\corretto-17.0.8.1\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\lib\idea_rt.jar=59136:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 ms each
+# Measurement: 4 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.ParallelBenchmarking.synchronizedMultiplication
+# Parameters: (n = 500, numThreads = 2)
+
+# Run progress: 36,11% complete, ETA 00:00:28
+# Fork: 1 of 1
+# Warmup Iteration   1: 132,685 ms/op
+# Warmup Iteration   2: 105,317 ms/op
+# Warmup Iteration   3: 105,926 ms/op
+Iteration   1: 104,756 ms/op
+Iteration   2: 98,344 ms/op
+Iteration   3: 101,843 ms/op
+Iteration   4: 
+Matrix size: 500x500
+Total Memory used: 4 MB
+Total Heap Size: 48 MB
+Available Cores: 16
+101,932 ms/op
+
+
+Result "org.example.ParallelBenchmarking.synchronizedMultiplication":
+  101,719 ±(99.9%) 16,964 ms/op [Average]
+  (min, avg, max) = (98,344, 101,719, 104,756), stdev = 2,625
+  CI (99.9%): [84,755, 118,683] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.8.1, OpenJDK 64-Bit Server VM, 17.0.8.1+8-LTS
+# VM invoker: C:\Users\lucia\.jdks\corretto-17.0.8.1\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\lib\idea_rt.jar=59136:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 ms each
+# Measurement: 4 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.ParallelBenchmarking.synchronizedMultiplication
+# Parameters: (n = 500, numThreads = 4)
+
+# Run progress: 38,89% complete, ETA 00:00:27
+# Fork: 1 of 1
+# Warmup Iteration   1: 71,393 ms/op
+# Warmup Iteration   2: 43,942 ms/op
+# Warmup Iteration   3: 56,160 ms/op
+Iteration   1: 53,659 ms/op
+Iteration   2: 52,149 ms/op
+Iteration   3: 52,652 ms/op
+Iteration   4: 
+Matrix size: 500x500
+Total Memory used: 4 MB
+Total Heap Size: 48 MB
+Available Cores: 16
+68,669 ms/op
+
+
+Result "org.example.ParallelBenchmarking.synchronizedMultiplication":
+  56,782 ±(99.9%) 51,366 ms/op [Average]
+  (min, avg, max) = (52,149, 56,782, 68,669), stdev = 7,949
+  CI (99.9%): [5,416, 108,149] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.8.1, OpenJDK 64-Bit Server VM, 17.0.8.1+8-LTS
+# VM invoker: C:\Users\lucia\.jdks\corretto-17.0.8.1\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\lib\idea_rt.jar=59136:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 ms each
+# Measurement: 4 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.ParallelBenchmarking.synchronizedMultiplication
+# Parameters: (n = 500, numThreads = 8)
+
+# Run progress: 41,67% complete, ETA 00:00:26
+# Fork: 1 of 1
+# Warmup Iteration   1: 91,270 ms/op
+# Warmup Iteration   2: 77,973 ms/op
+# Warmup Iteration   3: 76,210 ms/op
+Iteration   1: 72,655 ms/op
+Iteration   2: 64,508 ms/op
+Iteration   3: 69,967 ms/op
+Iteration   4: 
+Matrix size: 500x500
+Total Memory used: 6 MB
+Total Heap Size: 40 MB
+Available Cores: 16
+72,610 ms/op
+
+
+Result "org.example.ParallelBenchmarking.synchronizedMultiplication":
+  69,935 ±(99.9%) 24,749 ms/op [Average]
+  (min, avg, max) = (64,508, 69,935, 72,655), stdev = 3,830
+  CI (99.9%): [45,186, 94,683] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.8.1, OpenJDK 64-Bit Server VM, 17.0.8.1+8-LTS
+# VM invoker: C:\Users\lucia\.jdks\corretto-17.0.8.1\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\lib\idea_rt.jar=59136:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 ms each
+# Measurement: 4 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.ParallelBenchmarking.synchronizedMultiplication
+# Parameters: (n = 500, numThreads = 12)
+
+# Run progress: 44,44% complete, ETA 00:00:25
+# Fork: 1 of 1
+# Warmup Iteration   1: 110,410 ms/op
+# Warmup Iteration   2: 70,401 ms/op
+# Warmup Iteration   3: 74,731 ms/op
+Iteration   1: 75,085 ms/op
+Iteration   2: 62,101 ms/op
+Iteration   3: 79,965 ms/op
+Iteration   4: 
+Matrix size: 500x500
+Total Memory used: 4 MB
+Total Heap Size: 48 MB
+Available Cores: 16
+74,326 ms/op
+
+
+Result "org.example.ParallelBenchmarking.synchronizedMultiplication":
+  72,869 ±(99.9%) 49,118 ms/op [Average]
+  (min, avg, max) = (62,101, 72,869, 79,965), stdev = 7,601
+  CI (99.9%): [23,751, 121,987] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.8.1, OpenJDK 64-Bit Server VM, 17.0.8.1+8-LTS
+# VM invoker: C:\Users\lucia\.jdks\corretto-17.0.8.1\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\lib\idea_rt.jar=59136:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 ms each
+# Measurement: 4 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.ParallelBenchmarking.synchronizedMultiplication
+# Parameters: (n = 500, numThreads = 16)
+
+# Run progress: 47,22% complete, ETA 00:00:24
+# Fork: 1 of 1
+# Warmup Iteration   1: 133,050 ms/op
+# Warmup Iteration   2: 70,396 ms/op
+# Warmup Iteration   3: 75,159 ms/op
+Iteration   1: 75,748 ms/op
+Iteration   2: 73,634 ms/op
+Iteration   3: 76,568 ms/op
+Iteration   4: 
+Matrix size: 500x500
+Total Memory used: 4 MB
+Total Heap Size: 48 MB
+Available Cores: 16
+73,864 ms/op
+
+
+Result "org.example.ParallelBenchmarking.synchronizedMultiplication":
+  74,953 ±(99.9%) 9,264 ms/op [Average]
+  (min, avg, max) = (73,634, 74,953, 76,568), stdev = 1,434
+  CI (99.9%): [65,689, 84,217] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.8.1, OpenJDK 64-Bit Server VM, 17.0.8.1+8-LTS
+# VM invoker: C:\Users\lucia\.jdks\corretto-17.0.8.1\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\lib\idea_rt.jar=59136:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 ms each
+# Measurement: 4 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.ParallelBenchmarking.synchronizedMultiplication
+# Parameters: (n = 1000, numThreads = 1)
+
+# Run progress: 50,00% complete, ETA 00:00:23
+# Fork: 1 of 1
+# Warmup Iteration   1: 3102,759 ms/op
+# Warmup Iteration   2: 3405,426 ms/op
+# Warmup Iteration   3: 2784,468 ms/op
+Iteration   1: 3606,449 ms/op
+Iteration   2: 3122,909 ms/op
+Iteration   3: 2814,377 ms/op
+Iteration   4: 
+Matrix size: 1000x1000
+Total Memory used: 14 MB
+Total Heap Size: 60 MB
+Available Cores: 16
+4906,927 ms/op
+
+
+Result "org.example.ParallelBenchmarking.synchronizedMultiplication":
+  3612,665 ±(99.9%) 5960,320 ms/op [Average]
+  (min, avg, max) = (2814,377, 3612,665, 4906,927), stdev = 922,366
+  CI (99.9%): [≈ 0, 9572,985] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.8.1, OpenJDK 64-Bit Server VM, 17.0.8.1+8-LTS
+# VM invoker: C:\Users\lucia\.jdks\corretto-17.0.8.1\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\lib\idea_rt.jar=59136:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 ms each
+# Measurement: 4 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.ParallelBenchmarking.synchronizedMultiplication
+# Parameters: (n = 1000, numThreads = 2)
+
+# Run progress: 52,78% complete, ETA 00:00:43
+# Fork: 1 of 1
+# Warmup Iteration   1: 1659,035 ms/op
+# Warmup Iteration   2: 1179,191 ms/op
+# Warmup Iteration   3: 987,289 ms/op
+Iteration   1: 1011,965 ms/op
+Iteration   2: 1236,114 ms/op
+Iteration   3: 1367,728 ms/op
+Iteration   4: 
+Matrix size: 1000x1000
+Total Memory used: 13 MB
+Total Heap Size: 68 MB
+Available Cores: 16
+2199,628 ms/op
+
+
+Result "org.example.ParallelBenchmarking.synchronizedMultiplication":
+  1453,859 ±(99.9%) 3350,016 ms/op [Average]
+  (min, avg, max) = (1011,965, 1453,859, 2199,628), stdev = 518,419
+  CI (99.9%): [≈ 0, 4803,875] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.8.1, OpenJDK 64-Bit Server VM, 17.0.8.1+8-LTS
+# VM invoker: C:\Users\lucia\.jdks\corretto-17.0.8.1\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\lib\idea_rt.jar=59136:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 ms each
+# Measurement: 4 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.ParallelBenchmarking.synchronizedMultiplication
+# Parameters: (n = 1000, numThreads = 4)
+
+# Run progress: 55,56% complete, ETA 00:00:47
+# Fork: 1 of 1
+# Warmup Iteration   1: 683,296 ms/op
+# Warmup Iteration   2: 639,025 ms/op
+# Warmup Iteration   3: 699,347 ms/op
+Iteration   1: 700,470 ms/op
+Iteration   2: 690,454 ms/op
+Iteration   3: 807,223 ms/op
+Iteration   4: 
+Matrix size: 1000x1000
+Total Memory used: 13 MB
+Total Heap Size: 68 MB
+Available Cores: 16
+708,953 ms/op
+
+
+Result "org.example.ParallelBenchmarking.synchronizedMultiplication":
+  726,775 ±(99.9%) 349,998 ms/op [Average]
+  (min, avg, max) = (690,454, 726,775, 807,223), stdev = 54,163
+  CI (99.9%): [376,777, 1076,773] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.8.1, OpenJDK 64-Bit Server VM, 17.0.8.1+8-LTS
+# VM invoker: C:\Users\lucia\.jdks\corretto-17.0.8.1\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\lib\idea_rt.jar=59136:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 ms each
+# Measurement: 4 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.ParallelBenchmarking.synchronizedMultiplication
+# Parameters: (n = 1000, numThreads = 8)
+
+# Run progress: 58,33% complete, ETA 00:00:46
+# Fork: 1 of 1
+# Warmup Iteration   1: 812,357 ms/op
+# Warmup Iteration   2: 559,906 ms/op
+# Warmup Iteration   3: 657,157 ms/op
+Iteration   1: 795,688 ms/op
+Iteration   2: 653,972 ms/op
+Iteration   3: 789,438 ms/op
+Iteration   4: 
+Matrix size: 1000x1000
+Total Memory used: 12 MB
+Total Heap Size: 68 MB
+Available Cores: 16
+705,721 ms/op
+
+
+Result "org.example.ParallelBenchmarking.synchronizedMultiplication":
+  736,205 ±(99.9%) 442,437 ms/op [Average]
+  (min, avg, max) = (653,972, 736,205, 795,688), stdev = 68,468
+  CI (99.9%): [293,768, 1178,641] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.8.1, OpenJDK 64-Bit Server VM, 17.0.8.1+8-LTS
+# VM invoker: C:\Users\lucia\.jdks\corretto-17.0.8.1\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\lib\idea_rt.jar=59136:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 ms each
+# Measurement: 4 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.ParallelBenchmarking.synchronizedMultiplication
+# Parameters: (n = 1000, numThreads = 12)
+
+# Run progress: 61,11% complete, ETA 00:00:45
+# Fork: 1 of 1
+# Warmup Iteration   1: 566,246 ms/op
+# Warmup Iteration   2: 648,705 ms/op
+# Warmup Iteration   3: 579,374 ms/op
+Iteration   1: 760,914 ms/op
+Iteration   2: 588,884 ms/op
+Iteration   3: 570,576 ms/op
+Iteration   4: 
+Matrix size: 1000x1000
+Total Memory used: 12 MB
+Total Heap Size: 68 MB
+Available Cores: 16
+563,675 ms/op
+
+
+Result "org.example.ParallelBenchmarking.synchronizedMultiplication":
+  621,012 ±(99.9%) 606,603 ms/op [Average]
+  (min, avg, max) = (563,675, 621,012, 760,914), stdev = 93,872
+  CI (99.9%): [14,409, 1227,615] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.8.1, OpenJDK 64-Bit Server VM, 17.0.8.1+8-LTS
+# VM invoker: C:\Users\lucia\.jdks\corretto-17.0.8.1\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\lib\idea_rt.jar=59136:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 ms each
+# Measurement: 4 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.ParallelBenchmarking.synchronizedMultiplication
+# Parameters: (n = 1000, numThreads = 16)
+
+# Run progress: 63,89% complete, ETA 00:00:43
+# Fork: 1 of 1
+# Warmup Iteration   1: 663,038 ms/op
+# Warmup Iteration   2: 701,804 ms/op
+# Warmup Iteration   3: 790,221 ms/op
+Iteration   1: 724,464 ms/op
+Iteration   2: 717,010 ms/op
+Iteration   3: 681,661 ms/op
+Iteration   4: 
+Matrix size: 1000x1000
+Total Memory used: 16 MB
+Total Heap Size: 68 MB
+Available Cores: 16
+751,982 ms/op
+
+
+Result "org.example.ParallelBenchmarking.synchronizedMultiplication":
+  718,779 ±(99.9%) 187,124 ms/op [Average]
+  (min, avg, max) = (681,661, 718,779, 751,982), stdev = 28,958
+  CI (99.9%): [531,655, 905,903] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.8.1, OpenJDK 64-Bit Server VM, 17.0.8.1+8-LTS
+# VM invoker: C:\Users\lucia\.jdks\corretto-17.0.8.1\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\lib\idea_rt.jar=59136:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 ms each
+# Measurement: 4 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.ParallelBenchmarking.synchronizedMultiplication
+# Parameters: (n = 1500, numThreads = 1)
+
+# Run progress: 66,67% complete, ETA 00:00:41
+# Fork: 1 of 1
+# Warmup Iteration   1: 60954,633 ms/op
+# Warmup Iteration   2: 59582,627 ms/op
+# Warmup Iteration   3: 59092,513 ms/op
+Iteration   1: 56348,322 ms/op
+Iteration   2: 56480,379 ms/op
+Iteration   3: 60327,429 ms/op
+Iteration   4: 
+Matrix size: 1500x1500
+Total Memory used: 24 MB
+Total Heap Size: 128 MB
+Available Cores: 16
+60290,724 ms/op
+
+
+Result "org.example.ParallelBenchmarking.synchronizedMultiplication":
+  58361,713 ±(99.9%) 14535,063 ms/op [Average]
+  (min, avg, max) = (56348,322, 58361,713, 60327,429), stdev = 2249,317
+  CI (99.9%): [43826,651, 72896,776] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.8.1, OpenJDK 64-Bit Server VM, 17.0.8.1+8-LTS
+# VM invoker: C:\Users\lucia\.jdks\corretto-17.0.8.1\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\lib\idea_rt.jar=59136:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 ms each
+# Measurement: 4 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.ParallelBenchmarking.synchronizedMultiplication
+# Parameters: (n = 1500, numThreads = 2)
+
+# Run progress: 69,44% complete, ETA 00:03:38
+# Fork: 1 of 1
+# Warmup Iteration   1: 27902,210 ms/op
+# Warmup Iteration   2: 36575,835 ms/op
+# Warmup Iteration   3: 28060,231 ms/op
+Iteration   1: 34648,668 ms/op
+Iteration   2: 33347,382 ms/op
+Iteration   3: 38866,605 ms/op
+Iteration   4: 
+Matrix size: 1500x1500
+Total Memory used: 32 MB
+Total Heap Size: 128 MB
+Available Cores: 16
+36794,361 ms/op
+
+
+Result "org.example.ParallelBenchmarking.synchronizedMultiplication":
+  35914,254 ±(99.9%) 15687,915 ms/op [Average]
+  (min, avg, max) = (33347,382, 35914,254, 38866,605), stdev = 2427,722
+  CI (99.9%): [20226,340, 51602,169] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.8.1, OpenJDK 64-Bit Server VM, 17.0.8.1+8-LTS
+# VM invoker: C:\Users\lucia\.jdks\corretto-17.0.8.1\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\lib\idea_rt.jar=59136:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 ms each
+# Measurement: 4 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.ParallelBenchmarking.synchronizedMultiplication
+# Parameters: (n = 1500, numThreads = 4)
+
+# Run progress: 72,22% complete, ETA 00:04:42
+# Fork: 1 of 1
+# Warmup Iteration   1: 12237,388 ms/op
+# Warmup Iteration   2: 12865,771 ms/op
+# Warmup Iteration   3: 10468,570 ms/op
+Iteration   1: 30002,414 ms/op
+Iteration   2: 29885,758 ms/op
+Iteration   3: 33396,730 ms/op
+Iteration   4: 
+Matrix size: 1500x1500
+Total Memory used: 37 MB
+Total Heap Size: 134 MB
+Available Cores: 16
+9366,452 ms/op
+
+
+Result "org.example.ParallelBenchmarking.synchronizedMultiplication":
+  25662,838 ±(99.9%) 70988,831 ms/op [Average]
+  (min, avg, max) = (9366,452, 25662,838, 33396,730), stdev = 10985,600
+  CI (99.9%): [≈ 0, 96651,669] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.8.1, OpenJDK 64-Bit Server VM, 17.0.8.1+8-LTS
+# VM invoker: C:\Users\lucia\.jdks\corretto-17.0.8.1\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\lib\idea_rt.jar=59136:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 ms each
+# Measurement: 4 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.ParallelBenchmarking.synchronizedMultiplication
+# Parameters: (n = 1500, numThreads = 8)
+
+# Run progress: 75,00% complete, ETA 00:04:51
+# Fork: 1 of 1
+# Warmup Iteration   1: 5678,055 ms/op
+# Warmup Iteration   2: 5722,967 ms/op
+# Warmup Iteration   3: 5676,209 ms/op
+Iteration   1: 5764,920 ms/op
+Iteration   2: 18827,919 ms/op
+Iteration   3: 18034,205 ms/op
+Iteration   4: 
+Matrix size: 1500x1500
+Total Memory used: 37 MB
+Total Heap Size: 134 MB
+Available Cores: 16
+5564,976 ms/op
+
+
+Result "org.example.ParallelBenchmarking.synchronizedMultiplication":
+  12048,005 ±(99.9%) 47677,139 ms/op [Average]
+  (min, avg, max) = (5564,976, 12048,005, 18827,919), stdev = 7378,090
+  CI (99.9%): [≈ 0, 59725,144] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.8.1, OpenJDK 64-Bit Server VM, 17.0.8.1+8-LTS
+# VM invoker: C:\Users\lucia\.jdks\corretto-17.0.8.1\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\lib\idea_rt.jar=59136:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 ms each
+# Measurement: 4 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.ParallelBenchmarking.synchronizedMultiplication
+# Parameters: (n = 1500, numThreads = 12)
+
+# Run progress: 77,78% complete, ETA 00:04:28
+# Fork: 1 of 1
+# Warmup Iteration   1: 5149,781 ms/op
+# Warmup Iteration   2: 5361,547 ms/op
+# Warmup Iteration   3: 27842,869 ms/op
+Iteration   1: 28537,354 ms/op
+Iteration   2: 29485,104 ms/op
+Iteration   3: 29205,212 ms/op
+Iteration   4: 
+Matrix size: 1500x1500
+Total Memory used: 37 MB
+Total Heap Size: 134 MB
+Available Cores: 16
+30887,258 ms/op
+
+
+Result "org.example.ParallelBenchmarking.synchronizedMultiplication":
+  29528,732 ±(99.9%) 6391,592 ms/op [Average]
+  (min, avg, max) = (28537,354, 29528,732, 30887,258), stdev = 989,106
+  CI (99.9%): [23137,140, 35920,324] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.8.1, OpenJDK 64-Bit Server VM, 17.0.8.1+8-LTS
+# VM invoker: C:\Users\lucia\.jdks\corretto-17.0.8.1\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\lib\idea_rt.jar=59136:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 ms each
+# Measurement: 4 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.ParallelBenchmarking.synchronizedMultiplication
+# Parameters: (n = 1500, numThreads = 16)
+
+# Run progress: 80,56% complete, ETA 00:04:25
+# Fork: 1 of 1
+# Warmup Iteration   1: 4405,035 ms/op
+# Warmup Iteration   2: 13958,567 ms/op
+# Warmup Iteration   3: 28353,332 ms/op
+Iteration   1: 15302,467 ms/op
+Iteration   2: 4902,278 ms/op
+Iteration   3: 4897,873 ms/op
+Iteration   4: 
+Matrix size: 1500x1500
+Total Memory used: 37 MB
+Total Heap Size: 134 MB
+Available Cores: 16
+4992,973 ms/op
+
+
+Result "org.example.ParallelBenchmarking.synchronizedMultiplication":
+  7523,898 ±(99.9%) 33511,218 ms/op [Average]
+  (min, avg, max) = (4897,873, 7523,898, 15302,467), stdev = 5185,898
+  CI (99.9%): [≈ 0, 41035,116] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.8.1, OpenJDK 64-Bit Server VM, 17.0.8.1+8-LTS
+# VM invoker: C:\Users\lucia\.jdks\corretto-17.0.8.1\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\lib\idea_rt.jar=59136:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 ms each
+# Measurement: 4 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.ParallelBenchmarking.synchronizedMultiplication
+# Parameters: (n = 2000, numThreads = 1)
+
+# Run progress: 83,33% complete, ETA 00:03:55
+# Fork: 1 of 1
+# Warmup Iteration   1: 173955,899 ms/op
+# Warmup Iteration   2: 160202,450 ms/op
+# Warmup Iteration   3: 162445,830 ms/op
+Iteration   1: 177291,177 ms/op
+Iteration   2: 175438,950 ms/op
+Iteration   3: 167674,443 ms/op
+Iteration   4: 
+Matrix size: 2000x2000
+Total Memory used: 74 MB
+Total Heap Size: 220 MB
+Available Cores: 16
+166132,749 ms/op
+
+
+Result "org.example.ParallelBenchmarking.synchronizedMultiplication":
+  171634,330 ±(99.9%) 35867,078 ms/op [Average]
+  (min, avg, max) = (166132,749, 171634,330, 177291,177), stdev = 5550,470
+  CI (99.9%): [135767,252, 207501,408] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.8.1, OpenJDK 64-Bit Server VM, 17.0.8.1+8-LTS
+# VM invoker: C:\Users\lucia\.jdks\corretto-17.0.8.1\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\lib\idea_rt.jar=59136:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 ms each
+# Measurement: 4 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.ParallelBenchmarking.synchronizedMultiplication
+# Parameters: (n = 2000, numThreads = 2)
+
+# Run progress: 86,11% complete, ETA 00:06:20
+# Fork: 1 of 1
+# Warmup Iteration   1: 75736,378 ms/op
+# Warmup Iteration   2: 64211,228 ms/op
+# Warmup Iteration   3: 64521,902 ms/op
+Iteration   1: 66055,381 ms/op
+Iteration   2: 66455,025 ms/op
+Iteration   3: 79212,553 ms/op
+Iteration   4: 
+Matrix size: 2000x2000
+Total Memory used: 73 MB
+Total Heap Size: 220 MB
+Available Cores: 16
+69442,556 ms/op
+
+
+Result "org.example.ParallelBenchmarking.synchronizedMultiplication":
+  70291,379 ±(99.9%) 39653,866 ms/op [Average]
+  (min, avg, max) = (66055,381, 70291,379, 79212,553), stdev = 6136,480
+  CI (99.9%): [30637,513, 109945,245] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.8.1, OpenJDK 64-Bit Server VM, 17.0.8.1+8-LTS
+# VM invoker: C:\Users\lucia\.jdks\corretto-17.0.8.1\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\lib\idea_rt.jar=59136:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 ms each
+# Measurement: 4 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.ParallelBenchmarking.synchronizedMultiplication
+# Parameters: (n = 2000, numThreads = 4)
+
+# Run progress: 88,89% complete, ETA 00:05:55
+# Fork: 1 of 1
+# Warmup Iteration   1: 29799,486 ms/op
+# Warmup Iteration   2: 29619,377 ms/op
+# Warmup Iteration   3: 29910,131 ms/op
+Iteration   1: 31475,833 ms/op
+Iteration   2: 30993,089 ms/op
+Iteration   3: 30971,300 ms/op
+Iteration   4: 
+Matrix size: 2000x2000
+Total Memory used: 74 MB
+Total Heap Size: 220 MB
+Available Cores: 16
+31070,640 ms/op
+
+
+Result "org.example.ParallelBenchmarking.synchronizedMultiplication":
+  31127,715 ±(99.9%) 1524,783 ms/op [Average]
+  (min, avg, max) = (30971,300, 31127,715, 31475,833), stdev = 235,962
+  CI (99.9%): [29602,933, 32652,498] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.8.1, OpenJDK 64-Bit Server VM, 17.0.8.1+8-LTS
+# VM invoker: C:\Users\lucia\.jdks\corretto-17.0.8.1\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\lib\idea_rt.jar=59136:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 ms each
+# Measurement: 4 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.ParallelBenchmarking.synchronizedMultiplication
+# Parameters: (n = 2000, numThreads = 8)
+
+# Run progress: 91,67% complete, ETA 00:04:38
+# Fork: 1 of 1
+# Warmup Iteration   1: 17094,542 ms/op
+# Warmup Iteration   2: 17260,576 ms/op
+# Warmup Iteration   3: 17175,147 ms/op
+Iteration   1: 17048,848 ms/op
+Iteration   2: 17116,565 ms/op
+Iteration   3: 16952,967 ms/op
+Iteration   4: 
+Matrix size: 2000x2000
+Total Memory used: 73 MB
+Total Heap Size: 220 MB
+Available Cores: 16
+17271,990 ms/op
+
+
+Result "org.example.ParallelBenchmarking.synchronizedMultiplication":
+  17097,593 ±(99.9%) 867,503 ms/op [Average]
+  (min, avg, max) = (16952,967, 17097,593, 17271,990), stdev = 134,247
+  CI (99.9%): [16230,090, 17965,095] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.8.1, OpenJDK 64-Bit Server VM, 17.0.8.1+8-LTS
+# VM invoker: C:\Users\lucia\.jdks\corretto-17.0.8.1\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\lib\idea_rt.jar=59136:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 ms each
+# Measurement: 4 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.ParallelBenchmarking.synchronizedMultiplication
+# Parameters: (n = 2000, numThreads = 12)
+
+# Run progress: 94,44% complete, ETA 00:03:07
+# Fork: 1 of 1
+# Warmup Iteration   1: 14813,663 ms/op
+# Warmup Iteration   2: 14609,263 ms/op
+# Warmup Iteration   3: 14895,544 ms/op
+Iteration   1: 16000,390 ms/op
+Iteration   2: 24770,027 ms/op
+Iteration   3: 15859,739 ms/op
+Iteration   4: 
+Matrix size: 2000x2000
+Total Memory used: 72 MB
+Total Heap Size: 220 MB
+Available Cores: 16
+15372,380 ms/op
+
+
+Result "org.example.ParallelBenchmarking.synchronizedMultiplication":
+  18000,634 ±(99.9%) 29214,293 ms/op [Average]
+  (min, avg, max) = (15372,380, 18000,634, 24770,027), stdev = 4520,944
+  CI (99.9%): [≈ 0, 47214,927] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.8.1, OpenJDK 64-Bit Server VM, 17.0.8.1+8-LTS
+# VM invoker: C:\Users\lucia\.jdks\corretto-17.0.8.1\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\lib\idea_rt.jar=59136:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 ms each
+# Measurement: 4 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.ParallelBenchmarking.synchronizedMultiplication
+# Parameters: (n = 2000, numThreads = 16)
+
+# Run progress: 97,22% complete, ETA 00:01:34
+# Fork: 1 of 1
+# Warmup Iteration   1: 16142,616 ms/op
+# Warmup Iteration   2: 16669,375 ms/op
+# Warmup Iteration   3: 17140,358 ms/op
+Iteration   1: 16109,432 ms/op
+Iteration   2: 15411,051 ms/op
+Iteration   3: 15739,445 ms/op
+Iteration   4: 
+Matrix size: 2000x2000
+Total Memory used: 72 MB
+Total Heap Size: 220 MB
+Available Cores: 16
+17063,687 ms/op
+
+
+Result "org.example.ParallelBenchmarking.synchronizedMultiplication":
+  16080,904 ±(99.9%) 4617,759 ms/op [Average]
+  (min, avg, max) = (15411,051, 16080,904, 17063,687), stdev = 714,603
+  CI (99.9%): [11463,145, 20698,662] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:56:57
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark                                         (n)  (numThreads)  Mode  Cnt       Score       Error  Units
+ParallelBenchmarking.synchronizedMultiplication    10             1  avgt    4       0,365 ±     0,391  ms/op
+ParallelBenchmarking.synchronizedMultiplication    10             2  avgt    4       0,392 ±     0,680  ms/op
+ParallelBenchmarking.synchronizedMultiplication    10             4  avgt    4       0,825 ±     1,514  ms/op
+ParallelBenchmarking.synchronizedMultiplication    10             8  avgt    4       0,853 ±     0,130  ms/op
+ParallelBenchmarking.synchronizedMultiplication    10            12  avgt    4       1,100 ±     0,292  ms/op
+ParallelBenchmarking.synchronizedMultiplication    10            16  avgt    4       1,613 ±     1,147  ms/op
+ParallelBenchmarking.synchronizedMultiplication   100             1  avgt    4       1,849 ±     3,272  ms/op
+ParallelBenchmarking.synchronizedMultiplication   100             2  avgt    4       1,231 ±     0,368  ms/op
+ParallelBenchmarking.synchronizedMultiplication   100             4  avgt    4       1,556 ±     0,118  ms/op
+ParallelBenchmarking.synchronizedMultiplication   100             8  avgt    4       1,668 ±     0,287  ms/op
+ParallelBenchmarking.synchronizedMultiplication   100            12  avgt    4       1,634 ±     0,307  ms/op
+ParallelBenchmarking.synchronizedMultiplication   100            16  avgt    4       2,133 ±     2,935  ms/op
+ParallelBenchmarking.synchronizedMultiplication   500             1  avgt    4     210,443 ±    86,410  ms/op
+ParallelBenchmarking.synchronizedMultiplication   500             2  avgt    4     101,719 ±    16,964  ms/op
+ParallelBenchmarking.synchronizedMultiplication   500             4  avgt    4      56,782 ±    51,366  ms/op
+ParallelBenchmarking.synchronizedMultiplication   500             8  avgt    4      69,935 ±    24,749  ms/op
+ParallelBenchmarking.synchronizedMultiplication   500            12  avgt    4      72,869 ±    49,118  ms/op
+ParallelBenchmarking.synchronizedMultiplication   500            16  avgt    4      74,953 ±     9,264  ms/op
+ParallelBenchmarking.synchronizedMultiplication  1000             1  avgt    4    3612,665 ±  5960,320  ms/op
+ParallelBenchmarking.synchronizedMultiplication  1000             2  avgt    4    1453,859 ±  3350,016  ms/op
+ParallelBenchmarking.synchronizedMultiplication  1000             4  avgt    4     726,775 ±   349,998  ms/op
+ParallelBenchmarking.synchronizedMultiplication  1000             8  avgt    4     736,205 ±   442,437  ms/op
+ParallelBenchmarking.synchronizedMultiplication  1000            12  avgt    4     621,012 ±   606,603  ms/op
+ParallelBenchmarking.synchronizedMultiplication  1000            16  avgt    4     718,779 ±   187,124  ms/op
+ParallelBenchmarking.synchronizedMultiplication  1500             1  avgt    4   58361,713 ± 14535,063  ms/op
+ParallelBenchmarking.synchronizedMultiplication  1500             2  avgt    4   35914,254 ± 15687,915  ms/op
+ParallelBenchmarking.synchronizedMultiplication  1500             4  avgt    4   25662,838 ± 70988,831  ms/op
+ParallelBenchmarking.synchronizedMultiplication  1500             8  avgt    4   12048,005 ± 47677,139  ms/op
+ParallelBenchmarking.synchronizedMultiplication  1500            12  avgt    4   29528,732 ±  6391,592  ms/op
+ParallelBenchmarking.synchronizedMultiplication  1500            16  avgt    4    7523,898 ± 33511,218  ms/op
+ParallelBenchmarking.synchronizedMultiplication  2000             1  avgt    4  171634,330 ± 35867,078  ms/op
+ParallelBenchmarking.synchronizedMultiplication  2000             2  avgt    4   70291,379 ± 39653,866  ms/op
+ParallelBenchmarking.synchronizedMultiplication  2000             4  avgt    4   31127,715 ±  1524,783  ms/op
+ParallelBenchmarking.synchronizedMultiplication  2000             8  avgt    4   17097,593 ±   867,503  ms/op
+ParallelBenchmarking.synchronizedMultiplication  2000            12  avgt    4   18000,634 ± 29214,293  ms/op
+ParallelBenchmarking.synchronizedMultiplication  2000            16  avgt    4   16080,904 ±  4617,759  ms/op
+
+Process finished with exit code 0
